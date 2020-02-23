@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_02_20_040235) do
 
-  create_table "cannabis_plants", force: :cascade do |t|
+  create_table "plants", force: :cascade do |t|
     t.string "species"
     t.string "name"
     t.integer "seeds"

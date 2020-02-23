@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-CannabisPlant.create([
+Plant.create([
     { species: "Cannabis indica", name: "Strawberry Banana", seeds: 1},
 
     { species: "Cannabis indica", name: "Dark Star", seeds: 2 },

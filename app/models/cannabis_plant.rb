@@ -1,2 +1,0 @@
-class CannabisPlant < ApplicationRecord
-end

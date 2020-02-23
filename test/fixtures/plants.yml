@@ -2,10 +2,10 @@
 
 one:
   species: MyString
-  variety_name: MyString
-  number_of_seeds: 1
+  name: MyString
+  seeds: 1
 
 two:
   species: MyString
-  variety_name: MyString
-  number_of_seeds: 1
+  name: MyString
+  seeds: 1
