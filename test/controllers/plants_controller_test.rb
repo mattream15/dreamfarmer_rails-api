@@ -1,8 +1,8 @@
 require 'test_helper'
 
-PlantsControllerTest < ActionDispatch::IntegrationTest
+class PlantsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @plant = plants(:one)
+    @pet = plants(:one)
   end
 
   test "should get index" do
@@ -11,20 +11,20 @@ PlantsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create plant" do
-('Plant.count') do
-  plant.name } }, as: :json
+    assert_difference('Plant.count') do
+      post plants_url, params: { plant: { species: @plant.species, name: @plant.name, species: @plant.seeds } }, as: :json
     end
 
     assert_response 201
   end
 
-"plant" do
+  test "should show plant" do
     get plant_url(@plant), as: :json
     assert_response :success
   end
 
   test "should update plant" do
-    patch plant_url(@plant), params: { plant: { seeds: @plant.seeds, species: @plant.species, name: @plant.name } }, as: :json
+    patch plant_url(@plant), params: { plant: { species: @plant.species, name: @plant.name, seeds: @plant.seeds } }, as: :json
     assert_response 200
   end
 
