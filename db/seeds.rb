@@ -5,6 +5,29 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Room.create([{ name: "Ghost Train Haze", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Sour Diesel", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Casey Jones", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Strawberry Banana", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Dark Star", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Kosher Kush", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Cannatonic", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Three Blue Kings", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Larry Bird Kush", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+Room.create([{ name: "Pineapple Express", light: "HID", nutrient: "General Hydroponics Organics", humidity: "40%-45%", temperature: "68-77 ºF", pH: "5.5-6.5" }])
+
+
+
 Plant.create([
     { species: "Cannabis indica", name: "Strawberry Banana", seeds: 1},
 
