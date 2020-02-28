@@ -45,6 +45,6 @@ class RoomsController < ApplicationController
       
   
     def room_params
-        params.require(:room).permit(:name, :light, :nutrient, :humidity, :temperature, :pH)
+        params.require(:room).permit(:name)
     end
 end

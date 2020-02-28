@@ -16,9 +16,9 @@ class PlantsController < ApplicationController
   # POST /plants
   def create
     @plant = Plant.new(plant_params)
+    @room = Room.find_or_create_by(name: @plant.name)
+    @plant.room_id = @room.id
     if @plant.save
-      render json: @plant, status: :created
-      @room = Room.find_or_create_by(name: @plant.name)
       render json: @plant, include: [:room]
     else
       render json: @plant.errors, status: :unprocessable_entity

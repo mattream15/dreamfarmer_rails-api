@@ -23,11 +23,6 @@ ActiveRecord::Schema.define(version: 2020_02_24_034405) do
 
   create_table "rooms", force: :cascade do |t|
     t.string "name"
-    t.string "light"
-    t.string "nutrient"
-    t.string "humidity"
-    t.string "temperature"
-    t.string "pH"
   end
 
 end
