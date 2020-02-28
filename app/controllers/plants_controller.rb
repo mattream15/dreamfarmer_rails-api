@@ -15,11 +15,11 @@ class PlantsController < ApplicationController
 
   # POST /plants
   def create
-    #binding.pry
     @plant = Plant.new(plant_params)
-
     if @plant.save
-      render json: @plant, status: :created, location: @plant
+      render json: @plant, status: :created
+      @room = Room.find_or_create_by(name: @plant.name)
+      render json: @plant, include: [:room]
     else
       render json: @plant.errors, status: :unprocessable_entity
     end

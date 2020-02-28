@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_02_24_034405) do
     t.string "species"
     t.string "name"
     t.integer "seeds"
-    t.string "room_id"
+    t.integer "room_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
