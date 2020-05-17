@@ -31,11 +31,6 @@ class RoomsController < ApplicationController
             render json: @room.errors, status: :unprocessable_entity
         end
     end
-
-    def destroy
-        @room.destroy
-        render json: @room
-    end
       
     private
     # Use callbacks to share common setup or constraints between actions.
