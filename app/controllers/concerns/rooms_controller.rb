@@ -4,7 +4,7 @@ class RoomsController < ApplicationController
 
     def show
         if @room = Room.find_by(id: params[:id])
-            render json: @room, :include => :plants, :methods => :plant_ids, status: 200
+            render json: @room, :include => :plants, status: 200
         else 
             render json: "Grow Room Not Found"
         end
@@ -12,7 +12,7 @@ class RoomsController < ApplicationController
 
     def index
         @rooms = Room.all
-        render json: @rooms, :include => :plants, :methods => :plant_ids, status: 200
+        render json: @rooms, :include => :plants, status: 200
     end
       
     def create
